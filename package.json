@@ -12,6 +12,8 @@
     "url": "https://github.com/dazzlesoftware/genesis/issues"
   },
   "homepage": "https://github.com/dazzlesoftware/genesis",
+  "main": "gulpfile.js",
+  "packageManager": "yarn@4.6.0",
   "engines": {
     "node": ">=22.13.0",
     "npm": ">=10.9.2"
@@ -25,16 +27,18 @@
     "ncu-update": "ncu -a && yarn upgrade && cd assets/common && ncu -a && yarn upgrade && cd ../../ && cd platforms/common && ncu -a && yarn upgrade && cd ../../ && cd engines/common/nucleus && ncu -a && yarn upgrade && cd ../../../"
   },
   "devDependencies": {
+    "ansi-colors": "^4.1.3",
     "browserify": "^17.0.1",
+    "fancy-log": "^2.0.0",
     "gulp": "^5.0.0",
     "gulp-if": "^3.0.0",
-    "gulp-jsonminify": "1.1.0",
+    "gulp-jsonminify": "^1.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^6.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-util": "^3.0.8",
     "merge-stream": "^2.0.0",
+    "sass": "^1.83.4",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^4.0.0",
