@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jedupdate version="1">
+    <version>@version@</version>
+
+    <compatibility>
+        <version>39</version>
+        <version>40</version>
+        <version>41</version>
+        <version>42</version>
+    </compatibility>
+</jedupdate>

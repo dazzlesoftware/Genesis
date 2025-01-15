@@ -1,0 +1,43 @@
+{
+  "name": "gantry5",
+  "version": "5.4.0",
+  "description": "Gantry 5 / JS and CSS bundler",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dazzlesoftware/genesis.git"
+  },
+  "author": "Dazzle Software",
+  "bugs": {
+    "url": "https://github.com/dazzlesoftware/genesis/issues"
+  },
+  "homepage": "https://github.com/dazzlesoftware/genesis",
+  "engines": {
+    "node": ">=22.13.0",
+    "npm": ">=10.9.2"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "clean-composer-vendor": "rm -rf bin/builder/vendor && rm -rf platforms/joomla/lib_gantry5/vendor && rm -rf platforms/joomla/plg_system_gantry5_debugbar/vendor && rm -rf platforms/joomla/lib_gantry5/compat/vendor && rm -rf platforms/wordpress/gantry5/vendor && rm -rf platforms/wordpress/gantry5/compat/vendor && rm -rf platforms/wordpress/gantry5_debugbar/vendor",
+    "list-paths": "echo './' && echo 'assets/common' && echo 'platforms/common' && echo 'engines/common/nucleus'",
+    "build-assets": "rm -rf node_modules && rm -rf assets/common/node_modules && rm -rf platforms/common/node_modules && rm -rf engines/common/nucleus/node_modules && yarn install && cd assets/common && yarn install && cd ../../ && cd platforms/common && yarn install && cd ../../ && cd engines/common/nucleus && yarn install && cd ../../../",
+    "ncu": "ncu && cd assets/common && ncu && cd ../../ && cd platforms/common && ncu && cd ../../ && cd engines/common/nucleus && ncu && cd ../../../",
+    "ncu-update": "ncu -a && yarn upgrade && cd assets/common && ncu -a && yarn upgrade && cd ../../ && cd platforms/common && ncu -a && yarn upgrade && cd ../../ && cd engines/common/nucleus && ncu -a && yarn upgrade && cd ../../../"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.1",
+    "gulp": "^5.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-jsonminify": "1.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^2.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^4.0.0",
+    "yargs": "^17.7.2"
+  }
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Genesis";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Genesis.eot");
+    src: url("../fonts/Genesis.eot?#iefix") format("embedded-opentype"), url("../fonts/Genesis.woff") format("woff"), url("../fonts/Genesis.ttf") format("truetype"), url("../fonts/Genesis.svg#Genesis") format("svg");
+}
+
+#adminmenu #toplevel_page_layout-manager .menu-icon-generic div.wp-menu-image:before {
+    font-family: Genesis !important;
+    content: "\e600";
+    font-size: 1.3em !important;
+}

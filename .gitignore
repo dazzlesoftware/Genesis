@@ -1,0 +1,42 @@
+# OS Generated
+.DS_Store
+ehthumbs.db
+Thumbs.db
+
+# PhpStorm
+.idea
+
+# Composer
+**/vendor/**
+!**/scss/vendor/**
+composer.lock
+
+# Builds
+bin/build/tmp
+bin/build/package
+dist
+
+# Tester
+bin/tester/cache
+bin/tester/tests
+
+# Symbolic links in admin
+platforms/*/*/admin/common
+platforms/*/*/src
+platforms/*/*/assets
+platforms/*/*/engines
+
+# Symbolic links in themes
+themes/*/*/common
+themes/*/*/custom
+
+# Compiled
+**/.sass-cache
+**/*.map
+**/node_modules/*
+platforms/**/cache
+themes/**/cache
+npm-debug.log
+.vscode/launch.json
+sass-convert.sh
+.vscode/settings.json
