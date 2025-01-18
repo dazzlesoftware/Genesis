@@ -14,7 +14,7 @@ namespace Gantry\WordPress\Integration\WooCommerce;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use DazzleSoftware\Toolbox\Event\Event;
-use DazzleSoftware\Toolbox\Event\EventSubscriberInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * Class WooCommerce
