@@ -13,7 +13,7 @@ namespace Gantry\Framework;
 
 use Gantry\Debugger;
 use Pimple\ServiceProviderInterface;
-use DazzleSoftware\Toolbox\Event\EventSubscriberInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Timber\Timber;
 
 /**
