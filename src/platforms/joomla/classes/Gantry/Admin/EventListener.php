@@ -25,7 +25,7 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\Registry\Registry;
 use DazzleSoftware\Toolbox\Event\Event;
-use DazzleSoftware\Toolbox\Event\EventSubscriberInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use DazzleSoftware\Toolbox\File\IniFile;
 use DazzleSoftware\Toolbox\ResourceLocator\UniformResourceLocator;
 
