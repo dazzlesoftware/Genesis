@@ -13,12 +13,13 @@ namespace Gantry\Admin\Events;
 
 use Gantry\Component\Controller\RestfulControllerInterface;
 use Gantry\Framework\Gantry;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
  * Class AssigmentsEvent
  * @package Gantry\Admin\Events
  */
-class Event extends \DazzleSoftware\Toolbox\Event\Event
+class Event extends EventDispatcher
 {
     /** @var Gantry */
     public $gantry;
