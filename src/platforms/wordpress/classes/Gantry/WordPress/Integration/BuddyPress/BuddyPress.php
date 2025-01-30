@@ -13,7 +13,7 @@ namespace Gantry\WordPress\Integration\BuddyPress;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use DazzleSoftware\Toolbox\Event\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
