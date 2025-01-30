@@ -40,9 +40,9 @@ class EventListener implements EventSubscriberInterface
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onGlobalSave(Event $event)
+    public function onGlobalSave(EventDispatcher $event)
     {
         $option = (array) \get_option('gantry5_plugin');
         $option['production'] = (int)(bool) $event->data['production'];
@@ -50,38 +50,38 @@ class EventListener implements EventSubscriberInterface
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onStylesSave(Event $event)
+    public function onStylesSave(EventDispatcher $event)
     {
         $event->theme->preset_styles_update_css();
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onSettingsSave(Event $event)
+    public function onSettingsSave(EventDispatcher $event)
     {
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onLayoutSave(Event $event)
+    public function onLayoutSave(EventDispatcher $event)
     {
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onAssignmentsSave(Event $event)
+    public function onAssignmentsSave(EventDispatcher $event)
     {
     }
 
     /**
-     * @param MenuEvent|Event $event
+     * @param MenuEvent|EventDispatcher $event
      */
-    public function onMenusSave(Event $event)
+    public function onMenusSave(EventDispatcher $event)
     {
         /*
          * Automatically create navigation menu items:
