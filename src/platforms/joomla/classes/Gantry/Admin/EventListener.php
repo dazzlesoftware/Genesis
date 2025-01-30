@@ -52,40 +52,40 @@ class EventListener implements EventSubscriberInterface
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onAdminThemeInit(Event $event)
+    public function onAdminThemeInit(EventDispatcher $event)
     {
         $this->triggerEvent('onGantry5AdminInit', ['theme' => $event->theme]);
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onGlobalSave(Event $event)
+    public function onGlobalSave(EventDispatcher $event)
     {
         $this->triggerEvent('onGantry5SaveConfig', [$event->data]);
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onStylesSave(Event $event)
+    public function onStylesSave(EventDispatcher $event)
     {
         $this->triggerEvent('onGantry5UpdateCss', ['theme' => $event->theme]);
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onSettingsSave(Event $event)
+    public function onSettingsSave(EventDispatcher $event)
     {
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onLayoutSave(Event $event)
+    public function onLayoutSave(EventDispatcher $event)
     {
         /** @var Gantry $gantry */
         $gantry = $event->gantry;
@@ -130,19 +130,19 @@ class EventListener implements EventSubscriberInterface
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onAssignmentsSave(Event $event)
+    public function onAssignmentsSave(EventDispatcher $event)
     {
     }
 
     /**
-     * @param Event $event
+     * @param EventDispatcher $event
      * @throws \RuntimeException
      * @throws \UnexpectedValueException
      * @throws \InvalidArgumentException
      */
-    public function onMenusSave(Event $event)
+    public function onMenusSave(EventDispatcher $event)
     {
         /** @var array $menu */
         $menu = $event->menu;
