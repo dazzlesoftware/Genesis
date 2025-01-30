@@ -15,13 +15,13 @@ use Gantry\Component\Controller\RestfulControllerInterface;
 use Gantry\Component\Layout\Layout;
 use Gantry\Framework\Gantry;
 use Gantry\Framework\Theme;
-use DazzleSoftware\Toolbox\Event\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
  * Class LayoutEvent
  * @package Gantry\Admin\Events
  */
-class LayoutEvent extends Event
+class LayoutEvent extends EventDispatcher
 {
     /** @var Gantry */
     public $gantry;
