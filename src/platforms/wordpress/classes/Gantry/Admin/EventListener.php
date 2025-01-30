@@ -15,7 +15,7 @@ use Gantry\Admin\Events\MenuEvent;
 use Gantry\Component\Config\Config;
 use Gantry\Component\Menu\Item;
 use Gantry\Framework\Menu;
-use DazzleSoftware\Toolbox\Event\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
