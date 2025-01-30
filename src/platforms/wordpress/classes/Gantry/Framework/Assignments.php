@@ -12,7 +12,7 @@
 namespace Gantry\Framework;
 
 use Gantry\Component\Assignments\AbstractAssignments;
-use DazzleSoftware\Toolbox\Event\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
  * Class Assignments
