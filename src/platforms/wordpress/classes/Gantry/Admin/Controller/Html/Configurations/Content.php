@@ -16,7 +16,7 @@ use Gantry\Component\Admin\HtmlController;
 use Gantry\Component\Config\Config;
 use Gantry\Component\Response\JsonResponse;
 use Gantry\Framework\Services\ConfigServiceProvider;
-use DazzleSoftware\Toolbox\Event\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 use DazzleSoftware\Toolbox\File\YamlFile;
 use DazzleSoftware\Toolbox\ResourceLocator\UniformResourceLocator;
 
