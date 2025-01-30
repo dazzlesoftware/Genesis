@@ -168,15 +168,15 @@ abstract class Gantry extends Container
      * Fires an event with optional parameters.
      *
      * @param  string $eventName
-     * @param  Event  $event
-     * @return Event
+     * @param  EventDispatcher $event
+     * @return EventDispatcher
      */
-    public function fireEvent($eventName, Event $event = null)
+    public function fireEvent($eventName, EventDispatcher $event = null)
     {
         /** @var EventDispatcher $events */
         $events = $this['events'];
 
-        /** @var Event $event */
+        /** @var EventDispatcher $event */
         $event = $events->dispatch($eventName, $event);
 
         return $event;
