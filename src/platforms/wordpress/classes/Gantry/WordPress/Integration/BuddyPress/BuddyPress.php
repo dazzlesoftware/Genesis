@@ -70,9 +70,9 @@ class BuddyPress implements ServiceProviderInterface, EventSubscriberInterface
     /**
      * Called from Theme::init()
      *
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onThemeInit(Event $event)
+    public function onThemeInit(EventDispatcher $event)
     {
         \add_filter('g5_assignments_page_context_array', ['Gantry\\WordPress\\Assignments\\AssignmentsBuddyPress', 'addPageContextItem']);
         \add_filter('g5_assignments_page_context_rules', ['Gantry\\WordPress\\Assignments\\AssignmentsBuddyPress', 'addPageContextConditionals'], 10, 2);
@@ -81,9 +81,9 @@ class BuddyPress implements ServiceProviderInterface, EventSubscriberInterface
     /**
      * Called from Attachments::types()
      *
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onAssigmentsTypes(Event $event)
+    public function onAssigmentsTypes(EventDispatcher $event)
     {
         $event->types[] = 'buddypress';
     }
