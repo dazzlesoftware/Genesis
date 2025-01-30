@@ -71,9 +71,9 @@ class WooCommerce implements ServiceProviderInterface, EventSubscriberInterface
     /**
      * Called from Theme::init()
      *
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onThemeInit(Event $event)
+    public function onThemeInit(EventDispatcher $event)
     {
         \add_theme_support('woocommerce');
 
@@ -84,9 +84,9 @@ class WooCommerce implements ServiceProviderInterface, EventSubscriberInterface
     /**
      * Called from Attachments::types()
      *
-     * @param Event $event
+     * @param EventDispatcher $event
      */
-    public function onAssigmentsTypes(Event $event)
+    public function onAssigmentsTypes(EventDispatcher $event)
     {
         $event->types[] = 'woocommerce';
     }
