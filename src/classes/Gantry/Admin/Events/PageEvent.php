@@ -14,13 +14,13 @@ namespace Gantry\Admin\Events;
 use Gantry\Component\Controller\RestfulControllerInterface;
 use Gantry\Framework\Gantry;
 use Gantry\Framework\Theme;
-use DazzleSoftware\Toolbox\Event\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
  * Class PageEvent
  * @package Gantry\Admin\Events
  */
-class PageEvent extends Event
+class PageEvent extends EventDispatcher
 {
     /** @var Gantry */
     public $gantry;
