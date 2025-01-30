@@ -27,8 +27,7 @@ use Gantry\Framework\Site;
 use Gantry\Framework\Translator;
 use Gantry5\Loader;
 use DazzleSoftware\Toolbox\DI\Container;
-use DazzleSoftware\Toolbox\Event\Event;
-use DazzleSoftware\Toolbox\Event\EventDispatcher;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
  * Class Gantry
